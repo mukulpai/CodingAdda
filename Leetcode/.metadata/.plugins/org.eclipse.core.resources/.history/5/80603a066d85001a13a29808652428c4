@@ -1,0 +1,22 @@
+package com.leetcode.easy;
+
+public class ReverseInteger {
+	public void reverse(int x) {
+		int rem = 0;
+		int quo = x;
+		while (quo >= 1) {
+			rem = quo % 10;
+			quo = quo / 10;
+			System.out.print(rem);
+		}
+		// return 1;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ReverseInteger r = new ReverseInteger();
+		int x = 123;
+		r.reverse(x);
+	}
+
+}

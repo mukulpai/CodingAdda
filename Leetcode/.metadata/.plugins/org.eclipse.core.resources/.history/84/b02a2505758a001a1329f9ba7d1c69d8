@@ -1,0 +1,19 @@
+package com.arraysandstrings;
+
+public class Problem1 {
+	public static void main(String[] args) {
+		String s = "";
+		Problem1 p1 = new Problem1();
+		if (p1.isUnique(s)) {
+			System.out.println("String is Unique");
+		} else {
+			System.out.println("String is not Unique");
+		}
+
+	}
+
+	private boolean isUnique(String s) {
+		// TODO Auto-generated method stub
+
+	}
+}

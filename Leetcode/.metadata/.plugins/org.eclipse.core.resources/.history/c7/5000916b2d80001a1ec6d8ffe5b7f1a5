@@ -1,0 +1,16 @@
+package com.leetcode.easy;
+
+public class TwoSum {
+
+	public int[] twoSum(int[] nums, int target) {
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	TwoSum sum = new TwoSum();
+	int[] nums =  [2, 7, 11, 15];
+	target = 9;
+	sum.twoSum(nums, target);
+	}
+}

@@ -1,0 +1,33 @@
+package com.leetcode.easy;
+
+public class ReverseInteger {
+	public int reverse(int x) {
+		boolean flag = false;
+		if (x < 0) {
+			flag = true;
+			x = -x;
+		}
+		int rev = 0, prevrev = 0;
+		while (x > 0) {
+			int curr = x % 10;
+			rev = rev * 10 + x % 10;
+			x = x / 10;
+			if ((rev - curr) / 10 != prevrev) {
+				return 0;
+			}
+			prevrev = rev;
+		}
+		if (flag) {
+			rev = -rev;
+		}
+		return rev;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ReverseInteger r = new ReverseInteger();
+		int x = -123;
+		System.out.println(r.reverse(x));
+	}
+
+}
