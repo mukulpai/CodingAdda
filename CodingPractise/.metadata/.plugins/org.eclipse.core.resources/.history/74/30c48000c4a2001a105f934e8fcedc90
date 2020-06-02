@@ -1,0 +1,17 @@
+package com.coursera.algorithms;
+
+import java.util.Scanner;
+
+public class Fibonacci_Naive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter a number:");
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+
+		double result = calculateFibonacci(n);
+
+	}
+
+}

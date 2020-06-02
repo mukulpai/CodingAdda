@@ -1,0 +1,14 @@
+package com.hackerrank.thirtydayscode;
+
+public class Person {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		public int age;
+		Person(int initialAge){
+			if(initialAge > 0){
+				age = initialAge;
+			}
+		}
+	}
+}

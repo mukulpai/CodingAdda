@@ -1,0 +1,22 @@
+package com.hackerrank.java;
+
+import java.util.Scanner;
+
+public class StringIntroduction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		String s1 = in.nextLine();
+		String s2 = in.nextLine();
+		in.close();
+		System.out.println(s1.length() + s2.length());
+
+		if (Integer.valueOf(s1.charAt(0)) < Integer.valueOf(s2.charAt(0))) {
+			System.out.println("Yes");
+		} else {
+			System.out.println("No");
+		}
+		System.out.println(String.valueOf(s1.charAt(0)) + s2.length());
+	}
+}

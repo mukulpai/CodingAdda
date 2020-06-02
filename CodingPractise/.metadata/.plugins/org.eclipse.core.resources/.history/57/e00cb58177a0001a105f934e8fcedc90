@@ -1,0 +1,20 @@
+package com.hackerrank.java;
+
+import java.util.Scanner;
+import java.text.NumberFormat;
+
+public class CurrencyFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		double number = in.nextDouble();
+		in.close();
+
+		System.out.println("US: " + us);
+		System.out.println("India: " + india);
+		System.out.println("China: " + china);
+		System.out.println("France: " + france);
+	}
+
+}

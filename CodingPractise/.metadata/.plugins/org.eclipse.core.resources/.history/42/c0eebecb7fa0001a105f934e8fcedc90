@@ -1,0 +1,16 @@
+package com.hackerrank.java;
+
+import java.util.Scanner;
+
+public class StringIntroduction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		String s1 = in.nextLine();
+		String s2 = in.nextLine();
+		in.close();
+		System.out.println(s1.length() + s2.length());
+	}
+
+}

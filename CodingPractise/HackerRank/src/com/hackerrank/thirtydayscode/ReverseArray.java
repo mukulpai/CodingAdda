@@ -1,0 +1,20 @@
+package com.hackerrank.thirtydayscode;
+
+import java.util.Scanner;
+
+public class ReverseArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		int num = in.nextInt();
+		int[] ar = new int[num];
+		for (int i = 0; i < num; i++) {
+			ar[i] = in.nextInt();
+		}
+		for (int i = num - 1; i >= 0; i--) {
+			System.out.print(ar[i] + " ");
+		}
+		in.close();
+	}
+}

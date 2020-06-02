@@ -1,0 +1,36 @@
+package com.hackerrank.thirtydayscode;
+
+import java.util.Scanner;
+
+public class Person {
+	public int age;
+
+	Person(int initialAge) {
+		if (initialAge > 0) {
+			this.age = initialAge;
+		} else {
+			age = 0;
+			System.out.println("Age is not valid, setting age to 0.");
+		}
+	}
+
+	public void yearPasses() {
+		this.age = this.age + 1;
+	}
+
+	public void amIOld(int age) {
+		if (age < 13) {
+			System.out.println("You are young.");
+		} else if (age >= 13 && age < 18) {
+			System.out.println("You are a teenager.");
+		} else {
+			System.out.println("You are old.");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner();
+		Person p = new Person();
+	}
+}

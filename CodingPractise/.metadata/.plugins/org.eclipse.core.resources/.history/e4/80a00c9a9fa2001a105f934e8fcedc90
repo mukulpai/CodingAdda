@@ -1,0 +1,19 @@
+package com.hackerrank.algorithms;
+
+import java.util.Scanner;
+
+public class TimeConversion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		String[] time = in.nextLine().split(":");
+		int hh = Integer.valueOf(time[0]);
+		int mm = Integer.valueOf(time[1]);
+		System.out.printf("%02d", hh);
+		System.out.print(":");
+		System.out.printf("%02d", mm);
+		System.out.print(":");
+		in.close();
+	}
+}

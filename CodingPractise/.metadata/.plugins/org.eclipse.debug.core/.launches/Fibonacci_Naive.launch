@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Algorithms_Coursera/src/com/coursera/algorithms/Fibonacci_Naive.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.coursera.algorithms.Fibonacci_Naive"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Algorithms_Coursera"/>
+</launchConfiguration>
