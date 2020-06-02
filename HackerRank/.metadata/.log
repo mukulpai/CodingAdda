@@ -1,0 +1,46 @@
+!SESSION 2020-05-04 22:11:11.472 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 Enterprise amd64-64 Compressed References 20150630_255633 (JIT enabled, AOT enabled)
+J9VM - R28_jvm.28_20150630_1742_B255633
+JIT  - tr.r14.java_20150625_95081.01
+GC   - R28_jvm.28_20150630_1742_B255633_CMPRSS
+J9CL - 20150630_255633
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v95.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v95.ide
+
+!ENTRY com.ibm.mdm.mds.workbench.wse 4 0 2020-05-04 22:11:14.375
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.ibm.mdm.mds.workbench.wse [696]
+  Unresolved requirement: Import-Package: com.ibm.mdm.mds.jni
+    -> Export-Package: com.ibm.mdm.mds.jni; bundle-symbolic-name="com.ibm.mdm.mds.jni"; bundle-version="11.4.0.FP00IF000_20140924-0832"; version="0.0.0"
+       com.ibm.mdm.mds.jni [677]
+         Unresolved requirement: Require-Capability: osgi.native; native.paths.8:List<String>="win64_amd64/mad.dll"; native.paths.7:List<String>="win32/mad.dll"; native.paths.9:List<String>="win64_amd64/mad.dll"; native.paths.0:List<String>="zlinux64/libMAD.so"; native.paths.2:List<String>="plinux64/libMAD.so"; native.paths.1:List<String>="aix64/libMAD.so"; native.paths.4:List<String>="sunos64/libMAD.so"; native.paths.3:List<String>="linux64/libMAD.so"; native.paths.6:List<String>="win64_amd64/mad.dll"; native.paths.5:List<String>="win32/mad.dll"; filter:="(|(&(osgi.native.osname~=linux)(osgi.native.processor~=S390x))(&(osgi.native.osname~=aix)(osgi.native.processor~=ppc64))(&(osgi.native.osname~=linux)(osgi.native.processor~=ppc64))(&(osgi.native.osname~=linux)(osgi.native.processor~=x86-64))(&(osgi.native.osname~=sunos)(osgi.native.processor~=sparcv9))(&(osgi.native.osname~=win32)(osgi.native.processor~=x86))(&(osgi.native.osname~=win32)(osgi.native.processor~=x86-64))(&(osgi.native.osname~=windows server 2008 r2)(osgi.native.processor~=x86))(&(osgi.native.osname~=windows server 2008 r2)(osgi.native.processor~=x86-64))(&(osgi.native.osname~=Windows Server 2012)(osgi.native.processor~=x86-64)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.ds 2 0 2020-05-04 22:11:44.409
+!MESSAGE [SCR] Enabling components of bundle com.ibm.rational.llc.ide.core did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 2 0 2020-05-04 22:12:14.480
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.e4.core.di.extensions did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 2 0 2020-05-04 22:12:44.494
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.e4.core.services did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2020-05-04 22:13:06.228
+!MESSAGE The extensions and extension-points from the bundle "org.eclipse.emf.commonj.sdo" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.ds 2 0 2020-05-04 22:13:14.511
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.e4.ui.css.swt.theme did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 2 0 2020-05-04 22:13:44.528
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.e4.ui.di did not complete in 30000 ms 
