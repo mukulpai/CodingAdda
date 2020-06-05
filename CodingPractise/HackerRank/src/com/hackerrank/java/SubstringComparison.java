@@ -1,6 +1,8 @@
 package com.hackerrank.java;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SubstringComparison {
 
@@ -10,23 +12,15 @@ public class SubstringComparison {
 		String s = in.nextLine();
 		int k = in.nextInt();
 		in.close();
-		String temp = "";
-		String small = "";
-		String max = "";
+		ArrayList<String> arr = new ArrayList<String>();
 		for (int i = 0; i <= s.length() - k; i++) {
 			String next = s.substring(i, i + k);
-			if (small.isEmpty()) {
-				temp = next;
-			} else if (next.compareTo(temp) < 0) {
-				small = next;
-				temp = next;
-			} else if (next.compareTo(temp) > 0) {
-				max = next;
-				temp = next;
-			}
+			arr.add(next);
 
 		}
-		System.out.println(small);
-		System.out.println(max);
+		arr.sort(null);
+		System.out.println(arr.get(0));
+		System.out.println(arr.get(arr.size() - 1));
+
 	}
 }
