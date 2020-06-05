@@ -11,18 +11,24 @@ public class Kangaroo {
 		int v1 = in.nextInt();
 		int x2 = in.nextInt();
 		int v2 = in.nextInt();
-		int point1 = x1;
-		int point2 = x2;
 		in.close();
-		while (point1 != point2) {
-			point1 = point1 + v1;
-			point2 = point2 + v2;
+		String s = "";
+		boolean meet = false;
+
+		for (int i = 0; i < 10000; i++) {
+			x1 = x1 + v1;
+			x2 = x2 + v2;
+			if (Math.abs(x1 - x2) == Math.abs(v1 - v2)) {
+				meet = true;
+			}
+
 		}
-		if ((point1 == point2) && point1 != x1) {
-			System.out.println("YES");
+		if (meet) {
+			s = "YES";
 		} else {
-			System.out.println("NO");
+			s = "NO";
 		}
+		System.out.println(s);
 	}
 
 }
